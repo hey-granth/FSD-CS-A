@@ -1,0 +1,58 @@
+<!-- image gallery -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #gallery-img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <img id="gallery-img" src="logo.png" alt="Gallery Image">
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+        // Add your image file names here
+        const images = [
+            'logo.png',
+            'college.png',
+        ];
+        let current = 0;
+        function changeImage() {
+            current = (current + 1) % images.length;
+            document.getElementById('gallery-img').src = images[current];
+        }
+    </script>
+</body>
+
+</html>
