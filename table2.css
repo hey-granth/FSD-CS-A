@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 2px solid #333;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header {
+    background-color: #40e0d0;
+    color: #333;
+}
+
+.subheader {
+    background-color: #ffd700;
+    color: #333;
+}
+
+.device-cell {
+    background-color: #e8e8e8;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.brand-cell {
+    background-color: #e8e8e8;
+    text-align: center;
+    vertical-align: middle;
+}
