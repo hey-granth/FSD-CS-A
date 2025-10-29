@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: Pseudo Classes & Pseudo Elements</title>
+    <style>
+	
+</head>
+<body>
+
+    <header class="header">
+        <h1>Assignment: Pseudo Classes & Pseudo Elements</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact!</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="topics-list">
+            <h2><span class="star-icon"></span> Topics List <span class="star-icon"></span></h2>
+            <ul>
+                <li>HTML Basics</li>
+                <li>CSS Styling</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Node JS</li>
+            </ul>
+        </section>
+
+        <section class="pseudo-paragraph">
+            <p>Css allows developers to use pseudo-classes and pseudo-elements for styling special states of elements and specific parts of content. This paragraph demonstrates the ::first-letter and ::first-line effects.</p>
+        </section>
+
+        <section class="buttons-example">
+            <h2><span class="star-icon"></span> Buttons Example <span class="star-icon"></span></h2>
+            <button class="button">Button 1</button>
+            <button class="button">Button 2</button>
+        </section>
+    </main>
+
+</body>
+</html>

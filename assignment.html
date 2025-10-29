@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="text-align: center; margin-top: 50px; border-radius: 5px; border-color: black; border-width: 1px;">
+        <form action="">
+            Name: <input type="text" name="name" required><br><br>
+            Class: <input type="text" name="class" required><br><br>
+            Programming Skills: <input type="text" name="programming_skills" required><br><br>
+        </form>
+        <p id="name"></p>
+        <p id="class"></p>
+        <p id="programming_skills"></p>
+        <button onclick="submitForm()">Submit</button>
+    </div>
+</body>
+
+<script>
+    function submitForm() {
+        alert("Form submitted successfully!");
+        name = document.getElementById("name").value;
+        class_name = document.getElementById("class").value;
+        programming_skills = document.getElementById("programming_skills").value;
+
+        document.getElementById("name").innerText = "Name: " + name;
+        document.getElementById("class").innerText = "Class: " + class_name;
+        document.getElementById("programming_skills").innerText = "Programming Skills: " + programming_skills;
+    }
+
+</script>
+
+</html>
